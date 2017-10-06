@@ -1,0 +1,35 @@
+{
+  "name": "the-weather",
+  "version": "1.0.0",
+  "description": "A local weather web app",
+  "main": "index.js",
+  "repository": "https://github.com/Kelbster/the-weather",
+  "author": "Kelby Gassman",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --history-api-fallback",
+    "prod": "rm -rf dist/ && webpack -p"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "path": "^0.12.7",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1"
+  }
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-component {
+  font-family: 'Quicksand';
+  font-size: 16px;
+  color: #fefefe;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #35343b;
+
+  h1 {
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: .05337em;
+    margin: 12px 0 10px;
+    font-size: 4.25rem;
+  }
+
+  p {
+    font-size: .875rem;
+  }
+
+  button {
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 1px 8px rgba(255, 255, 255, 0.45);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.0817em;
+    font-size: 10px;
+    padding: 8px;
+    margin: 16px;
+    transition: box-shadow .2s, border .2s, transform .2s;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  button:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 1px 12px rgba(255, 255, 255, 0.85);
+  }
+
+  button:active {
+    box-shadow: 0 1px 8px rgba(255, 255, 255, 0.36);
+    transform: translateY(3px);
+  }
+
+  .weather-container {
+    max-width: 760px;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .loading {
+    border: 8px dashed coral;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    margin: 60px auto;
+    animation: loading 4s ease infinite;
+  }
+
+  .flex-it {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-it div {
+      margin: 0 32px;
+  }
+
+  .weather-icon {
+    width: 100px;
+    height: auto;
+  }
+
+  .temp {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .wind {
+    font-size: .875rem;
+  }
+
+  .wind img {
+    margin: 0 8px;
+    width: 28px;
+    vertical-align: middle;
+  }
+}
+
+@keyframes loading {
+  0% {
+    border-color: coral;
+    transform: rotate(0deg);
+  }
+  25% {
+    border-color: #FA592E;
+    transform: rotate(90deg);
+  }
+  50% {
+    border-color: #E43F1C;
+    transform: rotate(180deg);
+  }
+  75% {
+    border-color: #B23113;
+    transform: rotate(270deg);
+  }
+  100% {
+    border-color: #E43F1C;;
+    transform: rotate(360deg);
+  }
+}
