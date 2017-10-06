@@ -10,6 +10,10 @@
     "start": "webpack-dev-server --history-api-fallback",
     "prod": "rm -rf dist/ && webpack -p"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kelbster/the-weather.git"
+  },
   "dependencies": {
     "axios": "^0.16.2",
     "path": "^0.12.7",
