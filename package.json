@@ -1,8 +1,7 @@
 {
   "name": "the-weather",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "A local weather web app",
-  "main": "./src/index.jsx",
   "repository": {
     "type": "git",
     "url": "https://github.com/kelbster/the-weather.git"

@@ -9,7 +9,7 @@ require('./index.scss');
 const APIKEY = 'a0703d61a8b0827b';
 const iconPath = './src/img/';
 
-export default class Weather extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -286,4 +286,4 @@ export default class Weather extends React.Component {
   }
 };
 
-ReactDOM.render(<Weather />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
