@@ -5,7 +5,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: './app/index.html',
+  template: './src/index.html',
   filename: 'index.html',
   inject: 'body'
 });
@@ -17,7 +17,7 @@ const ExtractTextPluginConfig = new ExtractTextPlugin({
 
 module.exports = {
   devtool: 'cheap-module-source-map',
-  entry: './app/index.jsx',
+  entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'

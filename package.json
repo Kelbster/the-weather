@@ -2,7 +2,7 @@
   "name": "the-weather",
   "version": "1.0.0",
   "description": "A local weather web app",
-  "main": "index.js",
+  "main": "./src/index.jsx",
   "repository": "https://github.com/Kelbster/the-weather",
   "author": "Kelby Gassman",
   "license": "MIT",

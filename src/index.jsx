@@ -7,9 +7,9 @@ import Axios from 'axios';
 require('./index.scss');
 
 const APIKEY = 'a0703d61a8b0827b';
-const iconPath = './app/img/';
+const iconPath = './src/img/';
 
-export default class App extends React.Component {
+export default class Weather extends React.Component {
   constructor(props) {
     super(props);
 
@@ -286,4 +286,4 @@ export default class App extends React.Component {
   }
 };
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<Weather />, document.getElementById('app'));
