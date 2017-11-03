@@ -6,6 +6,12 @@ import ReactDOM from 'react-dom';
 import Axios from 'axios';
 require('./index.scss');
 
+/* Import all the images! */
+function importAll (r) {
+  r.keys().forEach(r);
+}
+importAll(require.context('./img/', true, /\.svg$/));
+
 const APIKEY = 'a0703d61a8b0827b';
 const iconPath = './src/img/';
 
@@ -44,7 +50,7 @@ export default class App extends React.Component {
   fetchData(position) {
     const lat = position[0];
     const lon = position[1];
-    return Axios.get(`http://api.wunderground.com/api/${ APIKEY }/conditions/q/${ lat },${ lon }.json`)
+    return Axios.get(`https://api.wunderground.com/api/${ APIKEY }/conditions/q/${ lat },${ lon }.json`)
       .then((response) => {
         return response.data.current_observation;
       });
@@ -275,7 +281,7 @@ export default class App extends React.Component {
                   </div>
                 </div>
                 <div>
-                  <p className="wind">What's the wind like? { this.state.windString }{ this.getWindDirection() }</p>
+                  <p className="wind">What's the wind like? <br className="hide-on-desktop" />{ this.state.windString }{ this.getWindDirection() }</p>
                   <button onClick={ () => this.toggleTemp() }>Switch to { !this.state.isCelsius ? 'Celsius' : 'Fahrenheight' }</button>
                 </div>
               </div>
